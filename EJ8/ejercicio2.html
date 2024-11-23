@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h2>Cálculo del Perímetro y Área de un Rectángulo</h2>
+
+    
+    <p id="perimetro"></p>
+    <p id="area"></p>
+
+    <script>
+        
+        var lado1 = parseFloat(prompt("Ingrese el valor del primer lado del rectángulo:"));
+        var lado2 = parseFloat(prompt("Ingrese el valor del segundo lado del rectángulo:"));
+
+     
+        var perimetro = 2 * (lado1 + lado2);
+        var area = lado1 * lado2;
+
+        
+        document.getElementById("perimetro").textContent = "El perímetro del rectángulo es " + perimetro;
+        document.getElementById("area").textContent = "El área del rectángulo es " + area;
+    </script>
+</body>
+</html>

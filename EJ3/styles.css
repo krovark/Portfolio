@@ -1,0 +1,60 @@
+.h1 h2 h3{
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+p{
+    font-size: 14px;
+}
+
+.azul {
+    color: blue;
+}
+
+.naranja {
+    color: orange;
+}
+
+#rojo {
+    color: red;
+}
+
+#bordo {
+    color: brown;
+}
+
+#verde {
+    color: green;
+}
+
+#verde-oscuro {
+    color: darkgreen;
+}
+
+.pink {
+    color: pink;
+}
+
+#darkpink {
+    color: darkmagenta;
+}
+
+.lightblue {
+    color: lightblue;
+}
+
+#rock{
+    color: darkcyan;
+}
+
+.idk {
+    color: darkslategray;
+}
+
+#idk2 {
+    color: darkslateblue;
+}

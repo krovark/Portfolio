@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Bootstrap 5 Grid Corregido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+     
+        .header { background-color: #28a745;  }
+        .box1, .box2, .box3, .box4 { background-color: #dee2e6;  }
+        .box-a, .box-b, .box-c, .box-d { background-color: #ffc107;  }
+        .mobile, .tablet, .desktop { background-color: #17a2b8;  }
+        .sad, .happy { background-color: #dc3545; }
+        .footer { background-color: #28a745; }
+
+        .box {
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+ 
+        .mobile { display: none; }
+        .tablet { display: none; }
+        .desktop { display: none; }
+
+        @media (max-width: 576px) {
+            .mobile { display: block; }
+            .tablet, .desktop, .sad { display: none; }
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            .tablet { display: block; }
+            .mobile, .desktop { display: none; }
+        }
+
+        @media (min-width: 768px) {
+            .desktop { display: block; }
+            .mobile, .tablet { display: none; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container mt-4">
+       
+        <div class="row">
+            <div class="col-12 header box">
+                <h3>Header</h3>
+            </div>
+        </div>
+    
+        
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-3 box box1">
+                <h3>1</h3>
+            </div>
+            <div class="col-6 col-md-3 box box2">
+                <h3>2</h3>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-6 col-md-3 box box3">
+                <h3>3</h3>
+            </div>
+            <div class="col-6 col-md-3 box box4">
+                <h3>4</h3>
+            </div>
+        </div>
+    
+       
+        <div class="row justify-content-center">
+            <div class="col-6 col-sm-3 col-md-3 box box-a order-sm-1 order-md-0">
+                <h3>A</h3>
+            </div>
+            <div class="col-6 col-sm-3 col-md-3 box box-b order-sm-1 order-md-0">
+                <h3>B</h3>
+            </div>
+            <div class="col-6 col-sm-3 col-md-3 box box-c order-sm-1 order-md-0">
+                <h3>C</h3>
+            </div>
+            <div class="col-6 col-sm-3 col-md-3 box box-d order-sm-1 order-md-0">
+                <h3>D</h3>
+            </div>
+        </div>
+
+       
+        <div class="row">
+            <div class="col-12 mobile box order-sm-0 order-md-1">
+                <h3>Mobile</h3>
+            </div>
+            <div class="col-12 tablet box order-sm-0 order-md-1">
+                <h3>Tablet</h3>
+            </div>
+            <div class="col-12 desktop box order-sm-0 order-md-1">
+                <h3>Desktop</h3>
+            </div>
+        </div>
+    
+       
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 sad box">
+                <h3>:(</h3>
+            </div>
+            <div class="col-12 col-sm-6 happy box">
+                <h3>:D</h3>
+            </div>
+        </div>
+    
+        
+        <div class="row">
+            <div class="col-12 footer box">
+                <h3>Footer</h3>
+            </div>
+        </div>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

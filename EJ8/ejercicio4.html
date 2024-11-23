@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h2>Mayor y Menor de 5 Números</h2>
+
+    <ul id="resultados"></ul>
+
+    <script>
+        
+        var numeros = [];
+        for (var i = 0; i < 5; i++) {
+            numeros.push(parseFloat(prompt("Ingrese el número " + (i + 1) + ":")));
+        }
+
+       
+        var mayor = Math.max(...numeros);
+        var menor = Math.min(...numeros);
+
+        
+        var lista = document.getElementById("resultados");
+        var elementoMayor = document.createElement("li");
+        elementoMayor.textContent = "El mayor número ingresado es: " + mayor;
+        lista.appendChild(elementoMayor);
+
+        var elementoMenor = document.createElement("li");
+        elementoMenor.textContent = "El menor número ingresado es: " + menor;
+        lista.appendChild(elementoMenor);
+    </script>
+</body>
+</html>
