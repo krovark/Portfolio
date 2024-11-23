@@ -8,7 +8,7 @@ body {
     background-color: #f8f9fa;
 }
 
-/* Header */
+
 header {
     text-align: center;
     padding: 1em;
@@ -40,7 +40,7 @@ header ul li a {
     text-decoration: none;
 }
 
-/* Main */
+
 main {
     padding: 2em;
     max-width: 800px;
@@ -70,7 +70,7 @@ ol li a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 1em;
